@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Shajia Annoor's Website</title>
+		<style>
+			#bar {
+       	 			background: #009999;
+        			min-height: 10vh;
+        			display: flex;
+        			align-items: stretch;
+  				justify-content: space-around;
+      			}
+      			
+      			#mainarea {
+  				display: flex;
+  				justify-content: space-around;
+  				min-height: 100vh;
+			}
+			
+			.main {
+        			padding: 10px;
+        			margin: 10px;
+        			background: off-white;
+      			}
+      			
+      			#footer {
+      				background: gray;
+      				display: flex;
+  				justify-content: space-around;
+  				min-height: 10vh;
+      			}
+      			
+      			#ulid {
+      				display: flex;
+      				flex-direction: column;
+      			}
+      			.liid {
+      				padding: 10px;
+      				background: #ccddff;
+      				border-style: solid; 
+      				min-width: 20vh; 
+      				list-style: none;
+      				font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+      			}
+      			
+      			#navigation {
+      				background-color: skyblue;
+      			}
+      			
+      			a:link {
+  				text-decoration: none;
+			}
+			#logo, #links, #copyright, #contact, #footerlink {
+				margin-top: 2em;
+			}
+			
+			.topnav .search-container {
+				float: right;
+			}
+			
+			#promotion {
+				background-color: #94b8b8;
+			}
+			
+			#topbarlink {
+				display: flex;
+      				flex-direction: row;
+      				list-style: none;
+      				text-align: center;
+			}
+
+			.topnav input[type=text] {
+				padding: 6px;
+				margin-top: 8px;
+				font-size: 17px;
+				border: none;
+			}
+
+			.topnav .search-container button {
+				float: right;
+				padding: 6px 10px;
+				margin-top: 8px;
+				margin-right: 16px;
+				background: #ddd;
+				font-size: 17px;
+				border: none;
+				cursor: pointer;
+			}
+
+			.topnav .search-container button:hover {
+				background: #ccc;
+			}
+
+			@media screen and (max-width: 600px) {
+				.topnav .search-container {
+					float: none;
+				}
+				
+				.topnav a, .topnav input[type=text], .topnav .search-container button {
+					float: none;
+				 	display: block;
+					text-align: left;
+					width: 100%;
+				 	margin: 0;
+				 	padding: 14px;
+				 }
+				  .topnav input[type=text] {
+				  	border: 1px solid #ccc;  
+				  }
+			}
+				
+			#topbarli {
+				padding-left: 15px ; 
+			}
+			
+			.responsive {
+				width: 100%;
+  				height: auto;
+			}
+			
+			@media only screen and (max-width: 600px) {
+				#mainarea {
+  					display: flex;
+  					justify-content: space-around;
+  					flex-direction: column;
+				}	
+				#profilepic {
+					height: auto;
+					width: 80%;	
+				}
+				
+				#topbarlink {
+					display: flex;
+      					flex-direction: column;
+      					list-style: none;
+      					text-align: center;
+				}		
+				
+				.responsive {
+					min-width:50px;
+					width: 80%;
+					height: auto;
+				}
+				#logo {
+					margin-top: 1em;
+					margin-left: 2em;
+					 
+				}
+				#links {
+					margin-top: none;
+				}	
+				#bar {
+					display: flex;
+					min-height: 100%;
+					direction: column;
+				}
+			} 
+		</style>
+	</head>
+		
+	<body>
+		<div id="bar">
+			<div id="logo">
+				 <img src="aubijopu.png" alt="Logo" class="responsive"> 
+			</div>
+			
+			<div id="right-bar">
+				<div id="links">
+					<nav>
+						<ul id="topbarlink">
+							<li id="topbarli"><a href="https://www.youtube.com/channel/UCjb_LRCe4qGgn2IS4YhLxzQ">YouTube</a></li>
+							<li id="topbarli"><a href="https://www.kaggle.com/shajia">Kaggle</a></li>
+							<li id="topbarli"><a href="https://toph.co/u/shajia"></a>Toph</li>
+							<li id="topbarli"><a href="https://bd.linkedin.com/in/shajia-annoor-666bb172">LinkedIn</a></li>
+						</ul>
+					</nav>
+				</div>
+			
+				<div id="search">
+					<div class="search-container">
+    						<form>
+      							<input type="text" placeholder="Search.." name="search">
+    						</form>
+  					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="mainarea">
+			<div id="navigation" class="main">
+				<nav>
+					<ul id="ulid">
+						<button class="liid" id="me">About Me</button>
+						<button class="liid" id="portfolio">Portfolio</a></button>
+						<button class="liid" id="experience">Experience</button>
+						<button class="liid" id="achieve">Achievements</a></button>
+					</ul>
+				</nav>
+			</div>
+			
+			<div id="content" class="main">		
+				<h1>Photo</h1> 
+				<img src="jopu.jpg" id="profilepic"> 
+				<h1>Career Objective</h1> 
+				<p>I want to give sustainable solutions to the technological problems in Bangladesh. It would like to help the businesses and services grow based on IT solutions.</p> 
+				<h1>Skills</h1> 
+				<p>C/C++</p> 
+				<p>Go</p> 
+				<p>Docker</p> 
+				<p>Linux</p> 
+				<p>MongoDB</p> 
+				<p>Git</p> <p>React</p>
+			</div>
+			
+			<div id="promotion" class="main">
+				<p>Adertisement 1: Buy Google TV</p>
+				<p>Adertisement 2: Buy Amazon TV</p>
+				<p>Adertisement 3: Buy Joty TV</p>
+				<p>Adertisement 4: Buy NSU TV</p>
+			</div>
+		</div>
+		
+		<div id="footer">
+			<div id="copyright">
+				<p>&copy; Shajia Annoor</p>
+			</div>
+			
+			<div id="contact">
+				Flat No. A-1, House No. 71, Block I, Bashundhara RA, Dhaka - 1229
+			</div>
+			
+			<div id="footerlink">
+				<nav>
+					<ul>
+						<li id="foot"><a href="/">About Me</a></li>
+						<li id="foot"><a href="/about">Portfolio</a></li>
+						<li id="foot"><a href="/products"></a>Experience</li>
+						<li id="foot"><a href="/contact">Achievements</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<script>
+			const me = document.querySelector("#me");
+			const experience = document.querySelector("#experience");
+			const portfolio = document.querySelector("#portfolio");
+			const achieve = document.querySelector("#achieve");
+			me.onclick = myUpdate;
+			experience.onclick = myExperience;
+			portfolio.onclick = myPortfolio;
+			achieve.onclick = myAchieve;
+			
+			function myUpdate() {
+				document.getElementById("content").innerHTML = '<p>Shajia Annoor is a Back-end development engineer. She is also learning DevOps to contribute to the existing projects of the company. Due to her genuine interest in competitive programming, she constantly looks for similar challenges in her professional work. She is also involved with problem authoring for programming competitions. This gives her the perspective to look at engineering problems from both the developers and the users end. Her skills with free-hand sketching helps her to visualize and explain scenarios rigorously. After her marriage, she learned to do things by herself and managed to improve her management skills. Having a life partner with the same profession helped her to share her experience and learn new skills.</p>';
+			}
+			function myPortfolio() {
+				console.log("Hi");
+				document.getElementById("content").innerHTML = '<h1>Photo</h1> \
+				<img src="jopu.jpg" id="profilepic"> \
+				<h1>Career Objective</h1> \
+				<p>I want to give sustainable solutions to the technological problems in Bangladesh. It would like to help the businesses and services grow based on IT solutions.</p> \
+				<h1>Skills</h1> \
+				<p>C/C++</p> \
+				<p>Go</p> \
+				<p>Docker</p> \
+				<p>Linux</p> \
+				<p>MongoDB</p> \
+				<p>Git</p> <p>React</p>';
+			}
+			function myExperience() {
+				console.log("Hi");
+				document.getElementById("content").innerHTML = '<h1>Experience</h1> <p>I have over two years experience in working as a back-end developer in our startup company named Aubichol IT. I also enjoy setting problems for top-level national contests. \
+				 <h2>Development</h2> \
+				 <p>Software Engineer and Co-Founder at Aubichol IT (2018-Present)</p> \
+				 <h2>Problem Setting</h2> \
+				 <p>NSU Cybernauts 2019 Inter University Programming Contest</p> \
+				 <p>10 IUT ICT Fest 2019 Inter University Programming Contest</p> \
+				 <p>LU-CSE Fest 2019 Inter University Programming Contest</p> \
+				 <p>Criterion Rounds on Toph</p> \
+				 <p>Daffodil National Girls Programming Contest 2019</p> \
+				 <p>Daffodil Intra Programming Contest 2019</p> \
+				 <p>Standard-Chartard Bank-Prothom Alo Inter School and College Programming Contest 2019</p> \
+				 <p>Stamford University Internaml Contest 2017</p>'; 
+			}
+			
+			function myAchieve() {
+				document.getElementById("content").innerHTML = '<h1>Programming Contests</h1> \
+				<p>2nd-place at the National Girls\' Programming Contest 2017</p> (<a href="https://algo.codemarshal.org/contests/ngpc2017/standings">Final Standings</a>)</p> \
+				<p>3rd-place at the NSU Power Programming 2018 (<a href="https://toph.co/c/nsu-power-programming-2018/standings">Final Standings</a>)</p> \
+				<p>55th-place at the BUET CSE-Day Programming Contest 2016 (<a href="https://algo.codemarshal.org/contests/buet-iupc-2016/standings">Final Standings</a>)</p> \
+				<p>56th-place at the IUT ICT Fet 2016 IUPC (<a href="https://toph.co/c/iut-ict-fest-8/standings">Final Standings</a>)</p> \
+				<p>61-st-place at the SUST IUPC 2017 (<a href="https://toph.co/c/iut-ict-fest-2017/standings">Final Standings</a>)</p> \
+				<p>71-st-place at the SUST IUPC 2017 (<a href="https://toph.co/c/cybernauts-npc-2018/standings">Final Standings</a>)</p> \
+				<p>78-th place at the 1st MBSTU CSE CARNIVAL Programming Contest (<a href="https://toph.co/c/mbstu-cse-carnival-1/standings">Final Standings</a>) </p> \
+				<p>84-th place at the ACM-ICPC Regional Dhaka Site 2016 (<a href="https://algo.codemarshal.org/contests/ICPCDH2016/standings">Final Standings</a>) </p>\
+				<p>84-th place at the ACM-ICPC Regional IIT-Kharagpur Site 2018 (<a href="https://www.codechef.com/public/rankings/ACM18KGP">Final Standings</a>) </p>\
+				<p>99th-place at the SUST IUPC 2017 (<a href="https://toph.co/c/sust-inter-2017/standings">Final Standings</a>)</p> \
+				<p>106th-place at the SUST NSU Cybernauts 2016 (<a href="https://toph.co/c/cybernauts16/standings">Final Standings</a>)</p> \
+				<p>134-th place at the ACM-ICPC Regional Dhaka Site 2018 (<a href="https://algo.codemarshal.org/contests/icpc-dhaka-18/standings">Final Standings</a>)</p> \
+				<p>Scored 22471876 points at the Google Hash Code 2020 Qualification Round (<a href="https://hashcodejudge.withgoogle.com/scoreboard">Final Standings</a>) </p> \ \				<p>Scored 30 points at the Facebook Hacker Cup Qualification Round 2017 (<a href="https://www.facebook.com/hackercup/scoreboard/1760504744276109/">Final Standings</a>) </p>';
+ 
+			}
+
+		</script>
+	</body>
+</html>
